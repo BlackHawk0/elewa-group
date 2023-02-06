@@ -1,39 +1,31 @@
-<!-- <p>elewa-hero works!</p> -->
+<div class="root" [style.background-image]="'url(' + backgroundImage + ')'">
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <h1 class="logo">elewa group</h1>
+                <ul class="menu-items">
+                    <li><a href="#">Activities</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Social Impact</a></li>
+                    <li><a href="#">Invest</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                
+            </div>
+        </nav>
+        <div class="section">
+            <div class="subtitle">
+                <h2>{{subtitle}}</h2>
+            </div>
+            <div class="title">
+            <h1>{{title}}</h1>
+            </div>
+        </div>
 
-
-<!-- <div class="hero-section" [style.background-image]="'url(' + backgroundImage + ')'">
-  <div class="hero-section-content">
-    <h2>{{ subtitle }}</h2>
-    <h1>{{ mainTitle }}</h1>
-    <p *ngIf="footerText">{{ footerText }}</p>
-  </div>
-</div> -->
-<div class="container">
-    <nav class="navbar">
-        <div class="navbar-container">
-            <h1 class="logo">elewa group</h1>
-            <ul class="menu-items">
-                <li><a href="#">Activities</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Social Impact</a></li>
-                <li><a href="#">Invest</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            
+        <div class="footer" *ngIf="footerText">
+            <p class="footer-text">{{footerText}}</p>
         </div>
-    </nav>
-    <div class="section">
-        <div class="subtitle">
-             <h2>Making a positive impact in the world</h2>
-        </div>
-        <div class="title">
-            <h1>Dependable, Creative, Supportive, Open Minded and Fun*</h1>
-        </div>
+        
     </div>
-
-    <div class="footer">
-        <p class="footer-text">*SERIOUS WHEN IT MATTERS</p>
-    </div>
-    
 </div>
