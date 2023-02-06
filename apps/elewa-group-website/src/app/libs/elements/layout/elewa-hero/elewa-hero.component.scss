@@ -5,6 +5,13 @@
     padding: 0;
     margin: 0;
 }
+.root {
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
 
 li, a{
     font-size: 16px;
@@ -47,7 +54,6 @@ li, a{
 }
 
 .section {
-    // height: calc(90vh - (60px + 40px)); /* 60px is the height of the navbar and 40px is the height of the footer */
     height: calc(90vh - (60px + 40px)); /* 60px is the height of the navbar and 40px is the height of the footer */
     display: flex;
     flex-direction: column;
