@@ -6,8 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./elewa-hero.component.scss'],
 })
 export class ElewaHeroComponent {
-  // @Input() subtitle: string;
-  // @Input() mainTitle: string;
-  // @Input() footerText: string;
-  // @Input() backgroundImage: string;
+  @Input() subtitle: string;
+  @Input() mainTitle: string;
+  @Input() footerText: string;
+  @Input() backgroundImage: string;
 }
