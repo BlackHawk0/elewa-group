@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class ElewaHeroComponent {
   @Input() subtitle: string;
-  @Input() mainTitle: string;
+  @Input() title: string:
   @Input() footerText: string;
   @Input() backgroundImage: string;
 }
