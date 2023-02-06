@@ -12,13 +12,14 @@ li, a{
 
 .container{
     padding: 30px 10%;
-    display: block
+    display: block;
 }
 .navbar-container{
     display: flex;
     justify-content: space-between;
-    height: 64px;
+    height: 50px;
     align-items: center;
+    border-bottom: 2px solid red;
 }
 
 .menu-items{
@@ -45,78 +46,41 @@ li, a{
     font-size: 40px;
 }
 
-.section{
-    margin-top: 500px;
+.section {
+    // height: calc(90vh - (60px + 40px)); /* 60px is the height of the navbar and 40px is the height of the footer */
+    height: calc(90vh - (60px + 40px)); /* 60px is the height of the navbar and 40px is the height of the footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    .subtitle {
+        
+        font-size: 0.875rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        max-width: 50%;
+    }
 }
 
-// .header {
-//     background-image: url(#);
-//     height: 500px;
-//     background-size: cover;
-//     background-position: center;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-// .subtitle {
-//     font-size: 28px;
-//     color: #333;
-//     text-align: center;
-// }
-// .title {
-//     font-size: 48px;
-//     color: #fff;
-//     text-align: center;
-//     font-weight: 700;
-// }
-// .footer {
-//     background-color: #f2f2f2;
-//     padding: 30px 0;
-//     text-align: center;
-// }
-// .footer-text {
-//     font-size: 14px;
-//     color: #333;
-// }
 
-@media (max-width: 768px){
-    .navbar{
-        opacity: 0.95;
-    }
 
-    .navbar-container{
-        display: block;
-        position: relative;
-        height: 64px;
-        transform-origin: 0% 0%;
-        transition: transform 0.3s ease-in-out;
-    }
+.footer{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
 
-    .navbar .menu-items{
-        padding-top: 100px;
-        background: #fff;
-        height: 100vh;
-        max-width: 300px;
-        transform: translate(-150%);
-        display: flex;
-        flex-direction: column;
-        margin-left: -40px;
-        padding-left: 40px;
-        transition: transform 0.5s ease-in-out;
-        box-shadow:  5px 0px 10px 0px #aaa;
-        overflow: scroll;
-    }
-
-    .navbar .menu-items li{
-        margin-bottom: 1.8rem;
-        font-size: 1.1rem;
-        font-weight: 500;
-    }
-
-    .logo{
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        font-size: 2.5rem;
-    }
+@media all and (max-width:500px){
+     .navbar-container{
+          font-size: 10px;
+     }
+     .menu-items{
+          padding:10px 0 10px 30px;
+     }
 }
