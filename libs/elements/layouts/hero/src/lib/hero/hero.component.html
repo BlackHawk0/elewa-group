@@ -1,19 +1,5 @@
 <div class="root" [ngStyle]="{ 'background-image': 'url(' + backgroundImage + ')' }">
     <div class="container">
-        <nav class="navbar">
-            <div class="navbar-container">
-                <h1 class="logo">elewa group</h1>
-                <ul class="menu-items">
-                    <li><a href="#">Activities</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Social Impact</a></li>
-                    <li><a href="#">Invest</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                
-            </div>
-        </nav>
         <div class="section">
             <div class="subtitle">
                 <h2>{{subtitle}}</h2>
@@ -26,6 +12,6 @@
         <div class="footer" *ngIf="footerText">
             <p class="footer-text">{{footerText}}</p>
         </div>
-        
+
     </div>
 </div>
