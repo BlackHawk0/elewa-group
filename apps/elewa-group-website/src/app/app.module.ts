@@ -6,8 +6,8 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 import { AppComponent } from './app.component';
 
 import { HomePageModule } from '@elewa-group/pages/elewa/home';
-// import { HeroModule } from './libs/elements/elements.module';
-import { HeroModule } from '@elewa-group/elements/layouts/hero';;
+
+import{ HeroModule } from '@elewa-group/elements/layouts/hero';
 
 import { CardsModule } from '@elewa-group/features/components/cards';
 
@@ -16,7 +16,9 @@ import { CardsModule } from '@elewa-group/features/components/cards';
   imports: [
     BrowserModule,
     ScullyLibModule,
-    HomePageModule
+    HomePageModule,
+    CardsModule,
+    HeroModule
   ],
   providers: [],
   bootstrap: [AppComponent],
