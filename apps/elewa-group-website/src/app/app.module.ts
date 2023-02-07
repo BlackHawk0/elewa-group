@@ -6,10 +6,11 @@ import { ScullyLibModule } from '@scullyio/ng-lib';
 import { AppComponent } from './app.component';
 
 import { HomePageModule } from '@elewa-group/pages/elewa/home';
-import { HeroModule } from './libs/elements/elements.module';
+// import { HeroModule } from './libs/elements/elements.module';
+import { HeroModule } from '@elewa-group/elements/layouts/hero';
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, ScullyLibModule, HeroModule, HomePageModule],
+  imports: [BrowserModule, ScullyLibModule, HomePageModule, HeroModule ],
   providers: [],
   bootstrap: [AppComponent],
 })
