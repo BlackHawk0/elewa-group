@@ -7,10 +7,17 @@ import { AppComponent } from './app.component';
 
 import { HomePageModule } from '@elewa-group/pages/elewa/home';
 // import { HeroModule } from './libs/elements/elements.module';
-import { HeroModule } from '@elewa-group/elements/layouts/hero';
+import { HeroModule } from '@elewa-group/elements/layouts/hero';;
+
+import { CardsModule } from '@elewa-group/features/components/cards';
+
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, ScullyLibModule, HomePageModule, HeroModule ],
+  imports: [
+    BrowserModule,
+    ScullyLibModule,
+    HomePageModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
