@@ -1,24 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { FeaturesComponentsBannersModule } from '@elewa-group/features/components/banners';
+
+import { MaterialDesignModule } from '@iote/bricks-angular';
 
 import { ScullyLibModule } from '@scullyio/ng-lib';
 
 import { AppComponent } from './app.component';
 
-import { HomePageModule } from '@elewa-group/pages/elewa/home';
-
-import { CardsModule } from '@elewa-group/features/components/cards';
-import { ButtonsModule } from '@elewa-group/features/components/buttons';
-import { FeaturesComponentsBannersModule } from '@elewa-group/features/components/banners';
+import { AppRoutingModule } from './app.routing';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+
+    MaterialDesignModule,
+
+    RouterModule,
     ScullyLibModule,
-    HomePageModule,
-    CardsModule,
-    ButtonsModule,
+
+    AppRoutingModule,
     FeaturesComponentsBannersModule
   ],
   providers: [],
